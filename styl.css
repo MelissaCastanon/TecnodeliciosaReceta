@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url('Imagenes/fondodos.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Estilo para el contenedor del menú */
+#menu-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 100px;
+    width: auto;
+}
+
+.menu-sections {
+    display: flex;
+    width: 100%;
+}
+
+.menu-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.menu-section a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f0f0f0;
+}
+
+#main-content {
+    flex: 1;
+    width: 100%;
+    margin: 120px 0 15px;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promociones {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.arrow.left{
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+/* Estilo para el pie de página */
+#footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    max-width: 65%;
+    height: auto;
+}
+
+.footer-address p {
+    font-size: 14px;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-item img {
+    margin-right: 10px;
+    width: 15px;
+    height: auto;
+}
+
+.contact-item p {
+    margin: 0;
+}

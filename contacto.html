@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC La Receta de Amor</title>
+    <link rel="shortcut icon" href="Imagenes/LE.ico" type="image/x-icon">
+    <link rel="stylesheet" href="contactostyle.css">
+</head>
+<body>
+
+    <!-- Contenedor del menú -->
+    <div id="menu-container">
+        <div class="logo-container">
+            <img src="Imagenes/LogoHeader.png" alt="Logo">
+        </div>
+        <div class="menu-sections">
+            <div class="menu-section"><a href="index.html">Home</a></div>
+            <div class="menu-section"><a href="nosotros.html">Nosotros</a></div>
+            <div class="menu-section"><a href="productos.html">Productos</a></div>
+            <div class="menu-section"><a href="contacto.html">Contactanos</a></div>
+        </div>
+    </div>
+
+    <!-- Contenido principal de la página -->
+    <div class="contact-wrapper">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Contáctanos</h2>
+                <form action="send_email.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Nombre y Apellido</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre y apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Número de Teléfono <span class="optional">(opcional)</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="Tu número de teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" placeholder="Asunto del mensaje" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Encuéntranos</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233.7301995562497!2d-99.107255!3d20.3959482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1613f19645719%3A0x3e10bbb8bbf1f2ac!2sArtesan%C3%ADas%20Melissa!5e0!3m2!1ses!2smx!4v1722477980597!5m2!1ses!2smx" 
+                    width="600" 
+                    height="450" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+                <p><strong>Dirección:</strong> Carr México Laredo S/N Loc. Col, Felipe Angeles, J.V, 42320 Ixmiquilpan, Hgo.</p>
+                <p><strong>Teléfono:</strong> +52 772 157 7926</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor del pie de página -->
+    <footer id="footer">
+        <div class="footer-section footer-logo">
+            <img src="Imagenes/footer.png" alt="Footer Logo">
+        </div>
+        <div class="footer-section footer-address">
+            <p>Carr México Laredo S/N Loc. Col, Felipe Angeles, J.V, 42320 Ixmiquilpan, Hgo.</p>
+        </div>
+        <div class="footer-section footer-contact">
+            <div class="contact-item">
+                <img src="Imagenes/telefono.png" alt="Teléfono">
+                <p>+52 772 157 7926</p>
+            </div>
+            <div class="contact-item">
+                <img src="Imagenes/tgmail.png" alt="Correo">
+                <p>mctecnodeliciosareceta@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <img src="Imagenes/facebook.png" alt="Facebook">
+                <p>MC. La Tecnodeliciosa Recta de Amor</p>
+            </div>
+            <div class="contact-item">
+                <img src="Imagenes/instagram.png" alt="Instagram">
+                <p>MC Receta de Amor</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="galerias.js"></script>
+
+</body>
+</html>
